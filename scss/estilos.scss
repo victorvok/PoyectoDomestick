@@ -1,0 +1,349 @@
+@import "contacto";
+@import "historia";
+@import "footer";
+@mixin carditems { background-image: $color_fondo;
+    border: 5px white;
+    border-radius: 2%;
+    color: white;    
+}
+
+$color_fondo: linear-gradient(315deg, rgba(10, 242, 250, 0.562) 10%, #f310c200 85% );
+$font_titulo:'Pacifico';
+
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+       
+    }
+         
+    body{
+    margin-top: 5rem;
+        background: linear-gradient(-45deg, #d1cac9, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 400%;
+        animation: gradient 10s ease infinite;
+        
+    }
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    
+    }
+    
+    .navbar-brand{
+        margin-left: 1rem;
+    }
+    .nav-item{
+        font-family: "pacifico";
+        color: solid white;
+        font-size: 1.5em;
+    }
+    .nav-item:hover{
+        background-image:url("/imagenes/fondoBotones.jpg") ;
+        
+            
+    }
+    
+    .collapse{
+      justify-content: right;
+        
+    }
+    nav{
+        background-image: linear-gradient(315deg, rgba(250, 10, 198, 0.856) 50%, #f310c20c 90% );
+    }
+    
+    
+    
+    @media only screen and (max-width:768px){
+    .textoSomos{
+        color: white;
+        padding: 0.3rem;
+        font-size: 1rem;
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+    
+   
+
+    }
+    .textoImg{
+    
+        padding: 1rem;
+        grid-area:textoImg;
+        
+    }
+    .tarjetas{
+
+        display: grid;
+        margin: 1rem;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: lighter;
+        justify-items: center;
+        border: "solid black 2px";
+        
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-areas:   
+        "card1 card2" 
+        "card4 card3"
+        "videoAdd videoAdd" 
+        "textoImg textoImg"
+        "imgMuertos imgMuertos"
+        "textoMuertos textoMuertos" ;
+    }
+    .img_diaMuertos{
+        align-self: center;    
+        width: 450px;
+         grid-area:imgMuertos;
+    }
+    .textoMuertos{
+        grid-area: textoMuertos;
+    }
+    .card-title{
+        font-family:$font_titulo, cursive;
+        font-size: 2rem;
+    }
+    
+    .card1{
+        grid-area: card1;
+        @include carditems()
+    
+    }
+    
+    .card2{
+        grid-area: card2;
+        @include carditems()
+    }
+    
+    .card3{
+        grid-area:card3;
+        @include carditems()
+    }
+    
+    .card4{
+        grid-area:card4;
+        @include carditems()
+    }
+    
+    .videoAdd{
+        margin-top: 1rem;
+        grid-area:videoAdd;
+        width: 100%;
+        align-self: center;
+    }
+    
+    .titulo{
+        padding: 1rem;
+        font-family: $font_titulo, cursive;
+        font-size: 3rem;
+        color: white;
+    }
+    
+    
+    
+    h5{
+        font-family:$font_titulo;
+    }
+        
+    
+    @media only screen and (min-width:769px){
+       
+       
+       
+        
+        .tarjetas{
+            display: grid;
+            padding: 1rem;
+            font-family: 'Roboto Condensed', sans-serif;
+            font-weight: lighter;
+            justify-items: center;
+            border: "solid black 2px";
+            gap:"1rem";
+            margin-top: 4rem;
+            grid-template-columns: 25% 25% 25% 25%;
+            grid-template-rows: auto auto auto;
+            grid-template-areas:   
+            "card1 card2 card4 card3"
+            "videoAdd videoAdd textoImg textoImg"
+            "textoMuertos textoMuertos imgMuertos imgMuertos";
+            
+        }
+        .textoSomos{
+            color: white;
+            padding: 0.3rem;
+            font-size: 1rem;
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+        
+        .textoImg{
+            padding: 1rem;
+            grid-area:textoImg;
+            
+        }
+        .img_diaMuertos{
+           grid-area:imgMuertos;
+            width: 500px;
+             margin-left: 15rem;
+            
+        }
+        .textoMuertos{
+            grid-area:textoMuertos;
+            padding: 1rem;
+        }
+        .card-title{
+            font-family: 'Pacifico', cursive;
+            font-size: 2rem;
+            
+        }
+        
+        .card1{
+            grid-area: card1;
+            @include carditems()
+            
+        
+        }
+        
+        .card2{
+            grid-area: card2;
+            @include carditems()
+        }
+        
+        .card3{
+            grid-area:card3;
+            @include carditems()
+        }
+        
+        .card4{
+            grid-area:card4;
+            @include carditems()
+        }
+        
+        .videoAdd{
+            margin-top: 1rem;
+            grid-area:videoAdd;
+            width: 100%;
+            align-self: center;
+        }
+        
+        .titulo{
+            padding: 1rem;
+            font-family: $font_titulo, cursive;
+            font-size: 3rem;
+            color: white;
+        }
+        
+        .carousel{
+            
+            margin-top: 5rem;
+            width: 30rem;
+            margin-left: 30rem;
+            
+            
+        }
+        h5{
+            font-family:$font_titulo;
+        }
+        
+        h4{
+            padding: 3rem;
+        }
+        }
+    @media only screen and (max-width:576px){
+        .textoSomos{
+            color: white;
+            
+            font-size: 1rem;
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+        
+        .textoImg{
+        
+            padding: 1rem;
+            grid-area:textoImg;
+            
+        }
+        .tarjetas{
+            display: grid;
+            margin: 0.5rem;
+            align-content: center;
+             font-family: 'Roboto Condensed', sans-serif;
+            font-weight: lighter;
+             gap:"1rem";
+            margin-top: 3.5rem;
+            grid-template-columns: auto;
+            grid-template-rows: auto auto auto auto auto auto auto auto;
+            grid-template-areas:   
+            "card1" 
+            "card2" 
+            "card4" 
+            "card3"
+            "videoAdd"  
+            "textoImg"
+            "textoMuertos"
+            "imgMuertos";
+            
+        }
+
+        .img_diaMuertos{
+            grid-area:imgMuertos;
+            width: 450px;
+            
+        }
+        .textoMuertos{
+            grid-area: textoMuertos;
+        }
+
+        .card-title{
+            font-family:$font_titulo, cursive;
+            font-size: 2rem;
+            
+        }
+        
+        .card1{
+            grid-area: card1;
+            @include carditems()
+            
+        
+        }
+        
+        .card2{
+            grid-area: card2;
+            @include carditems()
+        }
+        
+        .card3{
+            grid-area:card3;
+            @include carditems()
+        }
+        
+        .card4{
+            grid-area:card4;
+            @include carditems()
+        }
+        
+        .videoAdd{
+            margin-top: 1rem;
+            grid-area:videoAdd;
+            width: 100%;
+            align-self: left;
+            
+        }
+        
+        .titulo{
+            padding: 1rem;
+            font-family:$font_titulo, cursive;
+            font-size: 3rem;
+            color: white;
+        }
+        
+        
+        h4{
+            padding: 3rem;
+        }
+        }

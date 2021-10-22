@@ -1,0 +1,44 @@
+ 
+
+$color_fondo: linear-gradient(315deg, rgba(10, 242, 250, 0.562) 10%, #f310c200 85% );
+$font_titulo:'Pacifico';
+
+.ftr{ background-color: rgba(224, 11, 243, 0.322);
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    color: rgb(250, 246, 246);
+    font-size: 1rem;
+    display:block;
+    
+    
+    .__redes{   
+        font-family:$font_titulo, cursive;
+        width: 100%;
+        border-radius: 3%;
+        justify-items: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        
+
+
+     .__follow{
+    
+            font-family:$font_titulo, cursive;
+            font-size: 1.5rem;
+            color: rgb(7, 7, 7);
+            margin: 5px;}
+     .__Logo{
+                padding:10px;
+                top:10px;
+                transition: all 0.5s;
+                
+                }  
+                .__Logo:hover{
+                    border-radius: 100%;
+                    transform: scale(2,2); }              
+            
+                }
+            }

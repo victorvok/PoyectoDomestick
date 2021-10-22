@@ -1,0 +1,27 @@
+
+$color_fondo: linear-gradient(315deg, rgba(10, 242, 250, 0.562) 10%, #f310c200 85% );
+$font_titulo:'Pacifico';
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.contacto{
+    margin: 3rem;
+    padding: 3rem;
+    justify-self: center;
+    align-items: center;
+    ._mb-3{
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        color: rgb(250, 246, 246);
+        font-size: 1rem;
+        font-family: $font_titulo;
+        
+    }
+    
+
+    
+}
+

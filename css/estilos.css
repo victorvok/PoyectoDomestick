@@ -1,0 +1,488 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.contacto {
+  margin: 3rem;
+  padding: 3rem;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contacto ._mb-3 {
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  color: #faf6f6;
+  font-size: 1rem;
+  font-family: "Pacifico";
+}
+
+.historiaText {
+  padding-top: 4rem;
+}
+
+.historia {
+  margin: 20px;
+  font-size: 15pt;
+  color: white;
+}
+
+.tituloHistoria {
+  margin: 20px;
+  font-size: 35pt;
+  font-family: 'Pacifico', cursive;
+  color: white;
+}
+
+.ftr {
+  background-color: rgba(224, 11, 243, 0.322);
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  color: #faf6f6;
+  font-size: 1rem;
+  display: block;
+}
+
+.ftr .__redes {
+  font-family: "Pacifico", cursive;
+  width: 100%;
+  border-radius: 3%;
+  justify-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ftr .__redes .__follow {
+  font-family: "Pacifico", cursive;
+  font-size: 1.5rem;
+  color: #070707;
+  margin: 5px;
+}
+
+.ftr .__redes .__Logo {
+  padding: 10px;
+  top: 10px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.ftr .__redes .__Logo:hover {
+  border-radius: 100%;
+  -webkit-transform: scale(2, 2);
+          transform: scale(2, 2);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin-top: 5rem;
+  background: linear-gradient(-45deg, #d1cac9, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400%;
+  -webkit-animation: gradient 10s ease infinite;
+          animation: gradient 10s ease infinite;
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.navbar-brand {
+  margin-left: 1rem;
+}
+
+.nav-item {
+  font-family: "pacifico";
+  color: solid white;
+  font-size: 1.5em;
+}
+
+.nav-item:hover {
+  background-image: url("/imagenes/fondoBotones.jpg");
+}
+
+.collapse {
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+nav {
+  background-image: linear-gradient(315deg, rgba(250, 10, 198, 0.856) 50%, #f310c20c 90%);
+}
+
+@media only screen and (max-width: 768px) {
+  .textoSomos {
+    color: white;
+    padding: 0.3rem;
+    font-size: 1rem;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+}
+
+.textoImg {
+  padding: 1rem;
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: textoImg;
+}
+
+.tarjetas {
+  display: -ms-grid;
+  display: grid;
+  margin: 1rem;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: lighter;
+  justify-items: center;
+  border: "solid black 2px";
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -ms-grid-rows: auto auto auto auto auto auto;
+      grid-template-rows: auto auto auto auto auto auto;
+      grid-template-areas: "card1 card2"  "card4 card3" "videoAdd videoAdd"  "textoImg textoImg" "imgMuertos imgMuertos" "textoMuertos textoMuertos";
+}
+
+.img_diaMuertos {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 450px;
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: imgMuertos;
+}
+
+.textoMuertos {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: textoMuertos;
+}
+
+.card-title {
+  font-family: "Pacifico", cursive;
+  font-size: 2rem;
+}
+
+.card1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: card1;
+  background-image: linear-gradient(315deg, rgba(10, 242, 250, 0.562) 10%, #f310c200 85%);
+  border: 5px white;
+  border-radius: 2%;
+  color: white;
+}
+
+.card2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: card2;
+  background-image: linear-gradient(315deg, rgba(10, 242, 250, 0.562) 10%, #f310c200 85%);
+  border: 5px white;
+  border-radius: 2%;
+  color: white;
+}
+
+.card3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: card3;
+  background-image: linear-gradient(315deg, rgba(10, 242, 250, 0.562) 10%, #f310c200 85%);
+  border: 5px white;
+  border-radius: 2%;
+  color: white;
+}
+
+.card4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: card4;
+  background-image: linear-gradient(315deg, rgba(10, 242, 250, 0.562) 10%, #f310c200 85%);
+  border: 5px white;
+  border-radius: 2%;
+  color: white;
+}
+
+.videoAdd {
+  margin-top: 1rem;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: videoAdd;
+  width: 100%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.titulo {
+  padding: 1rem;
+  font-family: "Pacifico", cursive;
+  font-size: 3rem;
+  color: white;
+}
+
+h5 {
+  font-family: "Pacifico";
+}
+
+@media only screen and (min-width: 769px) {
+  .tarjetas {
+    display: -ms-grid;
+    display: grid;
+    padding: 1rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: lighter;
+    justify-items: center;
+    border: "solid black 2px";
+    gap: "1rem";
+    margin-top: 4rem;
+    -ms-grid-columns: 25% 25% 25% 25%;
+        grid-template-columns: 25% 25% 25% 25%;
+    -ms-grid-rows: auto auto auto;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "card1 card2 card4 card3" "videoAdd videoAdd textoImg textoImg" "textoMuertos textoMuertos imgMuertos imgMuertos";
+  }
+  .textoSomos {
+    color: white;
+    padding: 0.3rem;
+    font-size: 1rem;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+  .textoImg {
+    padding: 1rem;
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+    grid-area: textoImg;
+  }
+  .img_diaMuertos {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+    grid-area: imgMuertos;
+    width: 500px;
+    margin-left: 15rem;
+  }
+  .textoMuertos {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: textoMuertos;
+    padding: 1rem;
+  }
+  .card-title {
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+  }
+  .card1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: card1;
+    background-image: linear-gradient(315deg, rgba(10, 242, 250, 0.562) 10%, #f310c200 85%);
+    border: 5px white;
+    border-radius: 2%;
+    color: white;
+  }
+  .card2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: card2;
+    background-image: linear-gradient(315deg, rgba(10, 242, 250, 0.562) 10%, #f310c200 85%);
+    border: 5px white;
+    border-radius: 2%;
+    color: white;
+  }
+  .card3 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 4;
+    grid-area: card3;
+    background-image: linear-gradient(315deg, rgba(10, 242, 250, 0.562) 10%, #f310c200 85%);
+    border: 5px white;
+    border-radius: 2%;
+    color: white;
+  }
+  .card4 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: card4;
+    background-image: linear-gradient(315deg, rgba(10, 242, 250, 0.562) 10%, #f310c200 85%);
+    border: 5px white;
+    border-radius: 2%;
+    color: white;
+  }
+  .videoAdd {
+    margin-top: 1rem;
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: videoAdd;
+    width: 100%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .titulo {
+    padding: 1rem;
+    font-family: "Pacifico", cursive;
+    font-size: 3rem;
+    color: white;
+  }
+  .carousel {
+    margin-top: 5rem;
+    width: 30rem;
+    margin-left: 30rem;
+  }
+  h5 {
+    font-family: "Pacifico";
+  }
+  h4 {
+    padding: 3rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .textoSomos {
+    color: white;
+    font-size: 1rem;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+  .textoImg {
+    padding: 1rem;
+    -ms-grid-row: 6;
+    -ms-grid-column: 1;
+    grid-area: textoImg;
+  }
+  .tarjetas {
+    display: -ms-grid;
+    display: grid;
+    margin: 0.5rem;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: lighter;
+    gap: "1rem";
+    margin-top: 3.5rem;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: auto auto auto auto auto auto auto auto;
+        grid-template-rows: auto auto auto auto auto auto auto auto;
+        grid-template-areas: "card1"  "card2"  "card4"  "card3" "videoAdd"   "textoImg" "textoMuertos" "imgMuertos";
+  }
+  .img_diaMuertos {
+    -ms-grid-row: 8;
+    -ms-grid-column: 1;
+    grid-area: imgMuertos;
+    width: 450px;
+  }
+  .textoMuertos {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+    grid-area: textoMuertos;
+  }
+  .card-title {
+    font-family: "Pacifico", cursive;
+    font-size: 2rem;
+  }
+  .card1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: card1;
+    background-image: linear-gradient(315deg, rgba(10, 242, 250, 0.562) 10%, #f310c200 85%);
+    border: 5px white;
+    border-radius: 2%;
+    color: white;
+  }
+  .card2 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: card2;
+    background-image: linear-gradient(315deg, rgba(10, 242, 250, 0.562) 10%, #f310c200 85%);
+    border: 5px white;
+    border-radius: 2%;
+    color: white;
+  }
+  .card3 {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: card3;
+    background-image: linear-gradient(315deg, rgba(10, 242, 250, 0.562) 10%, #f310c200 85%);
+    border: 5px white;
+    border-radius: 2%;
+    color: white;
+  }
+  .card4 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: card4;
+    background-image: linear-gradient(315deg, rgba(10, 242, 250, 0.562) 10%, #f310c200 85%);
+    border: 5px white;
+    border-radius: 2%;
+    color: white;
+  }
+  .videoAdd {
+    margin-top: 1rem;
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    grid-area: videoAdd;
+    width: 100%;
+    -ms-flex-item-align: left;
+        -ms-grid-row-align: left;
+        align-self: left;
+  }
+  .titulo {
+    padding: 1rem;
+    font-family: "Pacifico", cursive;
+    font-size: 3rem;
+    color: white;
+  }
+  h4 {
+    padding: 3rem;
+  }
+}
