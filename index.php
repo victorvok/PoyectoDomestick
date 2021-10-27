@@ -2,7 +2,7 @@
 if (isset($_POST['submit'])) {
     //ini_set( 'display_errors', 1 ); # REMOVE // FOR DEBUG
     //error_reporting( E_ALL ); # REMOVE // FOR DEBUG
-    $from = "web@domestick.com"; // Email con el dominio del Hosting para evitar SPAM
+    $from = "mensajes@domestick.com"; // Email con el dominio del Hosting para evitar SPAM
     $fromName = "RPF-WEB"; // Nombre que saldrá en el email recibido
     $to = "domestick@hotmail.com"; // Dirección donde se enviará el formulario
     $subject = $_POST['validarAsunto']; // Asunto del Formulario
