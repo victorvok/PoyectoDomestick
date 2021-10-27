@@ -1,3 +1,4 @@
+@import "footer";
 
 $color_fondo: linear-gradient(315deg, rgba(10, 242, 250, 0.562) 10%, #f310c200 85% );
 $font_titulo:'Pacifico';
@@ -6,9 +7,9 @@ $font_titulo:'Pacifico';
     margin: 0;
     box-sizing: border-box;
 }
-.contacto{
+.needs-validation{
     margin: 3rem;
-    padding: 3rem;
+    padding: 1rem;
     justify-self: center;
     align-items: center;
     ._mb-3{

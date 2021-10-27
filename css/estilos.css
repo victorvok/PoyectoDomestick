@@ -1,3 +1,51 @@
+.ftr {
+  background-color: rgba(224, 11, 243, 0.322);
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  color: #faf6f6;
+  font-size: 1rem;
+  display: block;
+}
+
+.ftr .__redes {
+  font-family: "Pacifico", cursive;
+  width: 100%;
+  border-radius: 3%;
+  justify-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ftr .__redes .__follow {
+  font-family: "Pacifico", cursive;
+  font-size: 1.5rem;
+  color: #070707;
+  margin: 5px;
+}
+
+.ftr .__redes .__Logo {
+  padding: 10px;
+  top: 10px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.ftr .__redes .__Logo:hover {
+  border-radius: 100%;
+  -webkit-transform: scale(2, 2);
+          transform: scale(2, 2);
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -5,9 +53,9 @@
           box-sizing: border-box;
 }
 
-.contacto {
+.needs-validation {
   margin: 3rem;
-  padding: 3rem;
+  padding: 1rem;
   -ms-grid-column-align: center;
       justify-self: center;
   -webkit-box-align: center;
@@ -15,7 +63,7 @@
           align-items: center;
 }
 
-.contacto ._mb-3 {
+.needs-validation ._mb-3 {
   width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
