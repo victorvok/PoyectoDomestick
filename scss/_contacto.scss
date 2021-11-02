@@ -7,22 +7,18 @@ $font_titulo:'Pacifico';
     margin: 0;
     box-sizing: border-box;
 }
-.needs-validation{
+.formulario{
     margin: 3rem;
     padding: 1rem;
     justify-self: center;
     align-items: center;
-    ._mb-3{
-        width: 100%;
+   
+    width: 90%;
         justify-content: center;
         text-align: center;
         color: rgb(250, 246, 246);
         font-size: 1rem;
         font-family: $font_titulo;
         
+       
     }
-    
-
-    
-}
-

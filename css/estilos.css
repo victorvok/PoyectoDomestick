@@ -53,7 +53,7 @@
           box-sizing: border-box;
 }
 
-.needs-validation {
+.formulario {
   margin: 3rem;
   padding: 1rem;
   -ms-grid-column-align: center;
@@ -61,10 +61,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.needs-validation ._mb-3 {
-  width: 100%;
+  width: 90%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
