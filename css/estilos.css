@@ -196,7 +196,7 @@ body {
 }
 
 nav {
-  background-image: linear-gradient(315deg, rgba(250, 10, 198, 0.856) 50%, #f310c20c 90%);
+  background-image: linear-gradient(315deg, rgba(210, 10, 250, 0.856) 100%, #f310c20c 10%);
 }
 
 @media only screen and (max-width: 768px) {
