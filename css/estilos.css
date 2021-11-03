@@ -54,7 +54,7 @@
 }
 
 .formulario {
-  margin: 3rem;
+  margin: 1rem;
   padding: 1rem;
   -ms-grid-column-align: center;
       justify-self: center;
@@ -483,11 +483,15 @@ h5 {
     border: 5px white;
     border-radius: 2%;
     color: white;
+    width: 40rem;
+    margin-top: 1rem;
   }
   .card2 {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: card2;
+    width: 40rem;
+    margin-top: 1rem;
     background-image: linear-gradient(315deg, rgba(10, 242, 250, 0.562) 10%, #f310c200 85%);
     border: 5px white;
     border-radius: 2%;
@@ -501,6 +505,7 @@ h5 {
     border: 5px white;
     border-radius: 2%;
     color: white;
+    margin-top: 1rem;
   }
   .card4 {
     -ms-grid-row: 3;
@@ -510,6 +515,7 @@ h5 {
     border: 5px white;
     border-radius: 2%;
     color: white;
+    margin-top: 1rem;
   }
   .videoAdd {
     margin-top: 1rem;

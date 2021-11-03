@@ -308,23 +308,31 @@ $font_titulo:'Pacifico';
         .card1{
             grid-area: card1;
             @include carditems()
+            width: 40rem;
+            margin-top:1rem;
+            
             
         
         }
         
         .card2{
             grid-area: card2;
+            width: 40rem;
+            margin-top:1rem;
             @include carditems()
+            
         }
         
         .card3{
             grid-area:card3;
             @include carditems()
+            margin-top:1rem;
         }
         
         .card4{
             grid-area:card4;
             @include carditems()
+            margin-top:1rem;
         }
         
         .videoAdd{
