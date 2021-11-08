@@ -199,7 +199,7 @@ nav {
   background-image: linear-gradient(315deg, rgba(210, 10, 250, 0.856) 100%, #f310c20c 10%);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   .textoSomos {
     color: white;
     padding: 0.3rem;
@@ -258,20 +258,24 @@ nav {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: card1;
+  margin: 1rem;
   background-image: linear-gradient(315deg, rgba(10, 242, 250, 0.562) 10%, #f310c200 85%);
   border: 5px white;
   border-radius: 2%;
   color: white;
+  margin: 1rem;
 }
 
 .card2 {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: card2;
+  margin: 1rem;
   background-image: linear-gradient(315deg, rgba(10, 242, 250, 0.562) 10%, #f310c200 85%);
   border: 5px white;
   border-radius: 2%;
   color: white;
+  margin: 1rem;
 }
 
 .card3 {
@@ -282,6 +286,7 @@ nav {
   border: 5px white;
   border-radius: 2%;
   color: white;
+  margin: 1rem;
 }
 
 .card4 {
@@ -292,6 +297,7 @@ nav {
   border: 5px white;
   border-radius: 2%;
   color: white;
+  margin: 1rem;
 }
 
 .videoAdd {
@@ -313,11 +319,19 @@ nav {
   color: white;
 }
 
+.img_diaMuertos {
+  width: 100%;
+}
+
 h5 {
   font-family: "Pacifico";
 }
 
-@media only screen and (min-width: 769px) {
+.carousel-item {
+  margin-top: 5rem;
+}
+
+@media only screen and (min-width: 1025px) {
   .tarjetas {
     display: -ms-grid;
     display: grid;
@@ -374,6 +388,7 @@ h5 {
     border: 5px white;
     border-radius: 2%;
     color: white;
+    margin: 1rem;
   }
   .card2 {
     -ms-grid-row: 1;
@@ -383,6 +398,7 @@ h5 {
     border: 5px white;
     border-radius: 2%;
     color: white;
+    margin: 1rem;
   }
   .card3 {
     -ms-grid-row: 1;
@@ -392,6 +408,7 @@ h5 {
     border: 5px white;
     border-radius: 2%;
     color: white;
+    margin: 1rem;
   }
   .card4 {
     -ms-grid-row: 1;
@@ -401,6 +418,7 @@ h5 {
     border: 5px white;
     border-radius: 2%;
     color: white;
+    margin: 1rem;
   }
   .videoAdd {
     margin-top: 1rem;
@@ -420,9 +438,9 @@ h5 {
     color: white;
   }
   .carousel {
-    margin-top: 5rem;
-    width: 30rem;
-    margin-left: 30rem;
+    margin-top: 1rem;
+    width: 40rem;
+    margin-left: 25rem;
   }
   h5 {
     font-family: "Pacifico";
@@ -432,7 +450,7 @@ h5 {
   }
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 450px) {
   .textoSomos {
     color: white;
     font-size: 1rem;
@@ -450,6 +468,7 @@ h5 {
     margin: 0.5rem;
     -ms-flex-line-pack: center;
         align-content: center;
+    justify-items: center;
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: lighter;
     gap: "1rem";
@@ -464,7 +483,7 @@ h5 {
     -ms-grid-row: 8;
     -ms-grid-column: 1;
     grid-area: imgMuertos;
-    width: 450px;
+    width: 100%;
   }
   .textoMuertos {
     -ms-grid-row: 7;
@@ -479,12 +498,13 @@ h5 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: card1;
+    width: 40rem;
+    margin-top: 1rem;
     background-image: linear-gradient(315deg, rgba(10, 242, 250, 0.562) 10%, #f310c200 85%);
     border: 5px white;
     border-radius: 2%;
     color: white;
-    width: 40rem;
-    margin-top: 1rem;
+    margin: 1rem;
   }
   .card2 {
     -ms-grid-row: 2;
@@ -496,6 +516,7 @@ h5 {
     border: 5px white;
     border-radius: 2%;
     color: white;
+    margin: 1rem;
   }
   .card3 {
     -ms-grid-row: 4;
@@ -505,7 +526,7 @@ h5 {
     border: 5px white;
     border-radius: 2%;
     color: white;
-    margin-top: 1rem;
+    margin: 1rem;
   }
   .card4 {
     -ms-grid-row: 3;
@@ -515,7 +536,7 @@ h5 {
     border: 5px white;
     border-radius: 2%;
     color: white;
-    margin-top: 1rem;
+    margin: 1rem;
   }
   .videoAdd {
     margin-top: 1rem;
@@ -523,17 +544,23 @@ h5 {
     -ms-grid-column: 1;
     grid-area: videoAdd;
     width: 100%;
-    -ms-flex-item-align: left;
-        -ms-grid-row-align: left;
-        align-self: left;
   }
   .titulo {
     padding: 1rem;
     font-family: "Pacifico", cursive;
-    font-size: 3rem;
+    font-size: 2rem;
     color: white;
   }
   h4 {
     padding: 3rem;
+  }
+  .textoMuertos {
+    padding: 1rem;
+  }
+  .img_diaMuertos {
+    width: 100%;
+  }
+  .carousel-item {
+    margin-top: 5rem;
   }
 }

@@ -4,7 +4,8 @@
 @mixin carditems { background-image: $color_fondo;
     border: 5px white;
     border-radius: 2%;
-    color: white;    
+    color: white;   
+    margin: 1rem; 
 }
 
 $color_fondo: linear-gradient(315deg, rgba(10, 242, 250, 0.562) 10%, #f310c200 85% );
@@ -61,7 +62,7 @@ $font_titulo:'Pacifico';
     
     
     
-    @media only screen and (max-width:768px){
+    @media only screen and (max-width:1024px){
     .textoSomos{
         color: white;
         padding: 0.3rem;
@@ -108,27 +109,37 @@ $font_titulo:'Pacifico';
     .card-title{
         font-family:$font_titulo, cursive;
         font-size: 2rem;
+       
+
     }
     
     .card1{
         grid-area: card1;
+        margin: 1rem;
         @include carditems()
+        
+        
     
     }
     
     .card2{
         grid-area: card2;
+        margin: 1rem;
         @include carditems()
+        
     }
     
     .card3{
         grid-area:card3;
+        
         @include carditems()
+        
     }
     
     .card4{
         grid-area:card4;
         @include carditems()
+        
     }
     
     .videoAdd{
@@ -144,15 +155,19 @@ $font_titulo:'Pacifico';
         font-size: 3rem;
         color: white;
     }
-    
+    .img_diaMuertos{
+        width: 100%;
+    }
     
     
     h5{
         font-family:$font_titulo;
     }
-        
+    .carousel-item{
+        margin-top: 5rem;
+    }
     
-    @media only screen and (min-width:769px){
+    @media only screen and (min-width:1025px){
        
        
        
@@ -206,22 +221,26 @@ $font_titulo:'Pacifico';
             grid-area: card1;
             @include carditems()
             
+            
         
         }
         
         .card2{
             grid-area: card2;
             @include carditems()
+            
         }
         
         .card3{
             grid-area:card3;
             @include carditems()
+            
         }
         
         .card4{
             grid-area:card4;
             @include carditems()
+            
         }
         
         .videoAdd{
@@ -240,9 +259,9 @@ $font_titulo:'Pacifico';
         
         .carousel{
             
-            margin-top: 5rem;
-            width: 30rem;
-            margin-left: 30rem;
+            margin-top: 1rem;
+            width: 40rem;
+            margin-left: 25rem;
             
             
         }
@@ -253,8 +272,9 @@ $font_titulo:'Pacifico';
         h4{
             padding: 3rem;
         }
+       
         }
-    @media only screen and (max-width:576px){
+    @media only screen and (max-width:450px){
         .textoSomos{
             color: white;
             
@@ -271,7 +291,8 @@ $font_titulo:'Pacifico';
         .tarjetas{
             display: grid;
             margin: 0.5rem;
-            align-content: center;
+            align-content:center;
+            justify-items: center;
              font-family: 'Roboto Condensed', sans-serif;
             font-weight: lighter;
              gap:"1rem";
@@ -292,7 +313,7 @@ $font_titulo:'Pacifico';
 
         .img_diaMuertos{
             grid-area:imgMuertos;
-            width: 450px;
+            width: 100%;
             
         }
         .textoMuertos{
@@ -307,10 +328,9 @@ $font_titulo:'Pacifico';
         
         .card1{
             grid-area: card1;
-            @include carditems()
             width: 40rem;
-            margin-top:1rem;
-            
+            margin-top: 1rem;
+            @include carditems()
             
         
         }
@@ -326,27 +346,26 @@ $font_titulo:'Pacifico';
         .card3{
             grid-area:card3;
             @include carditems()
-            margin-top:1rem;
+            
         }
         
         .card4{
             grid-area:card4;
             @include carditems()
-            margin-top:1rem;
+            
         }
         
         .videoAdd{
             margin-top: 1rem;
             grid-area:videoAdd;
             width: 100%;
-            align-self: left;
-            
-        }
+          
+       }
         
         .titulo{
             padding: 1rem;
             font-family:$font_titulo, cursive;
-            font-size: 3rem;
+            font-size: 2rem;
             color: white;
         }
         
@@ -354,4 +373,16 @@ $font_titulo:'Pacifico';
         h4{
             padding: 3rem;
         }
+        
+        .textoMuertos{
+            padding: 1rem;
+
         }
+
+        .img_diaMuertos{
+            width: 100%;
+        }
+        .carousel-item{
+            margin-top: 5rem;
+        }
+    }
